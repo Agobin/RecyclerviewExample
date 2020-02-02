@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hello Buddy"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        android:id="@+id/textviewMessage">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@mipmap/blast_image"
+        android:backgroundTint="#ff00ff"/>
+
+    <ImageView
+        android:id="@+id/imgShare"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_share"/>
+</LinearLayout>
