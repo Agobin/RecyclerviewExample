@@ -56,7 +56,9 @@ class RecyclerAdapter(val context: Context, val items: List<String>) : RecyclerV
             }
 
             view.imgDisplay.setOnClickListener {
-                Cache.imageId = R.drawable.canada
+
+                Cache.imageId = if((Math.random() * 10) > 5) R.drawable.canada else R.drawable.ambaflag
+
                 val intent = Intent(context, DisplayImageActivity::class.java)
                 startActivity(context, intent, null)
             }
