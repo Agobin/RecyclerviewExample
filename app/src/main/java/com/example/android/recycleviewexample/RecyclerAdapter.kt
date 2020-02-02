@@ -60,6 +60,8 @@ class RecyclerAdapter(val context: Context, val items: List<String>) : RecyclerV
                 Cache.imageId = if((Math.random() * 10) > 5) R.drawable.canada else R.drawable.ambaflag
 
                 val intent = Intent(context, DisplayImageActivity::class.java)
+
+                intent.putExtra("imageId", Cache.imageId)
                 startActivity(context, intent, null)
             }
         }
